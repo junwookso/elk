@@ -21,7 +21,7 @@ sudo pip3 install podman-compose
 openssl rand -hex 32
 
 - kibana_system 사용자 비밀번호를 .env 에 기록
-sudo podman exec -it elasticsearch bin/elasticsearch-reset-password -u kibana_system # 
+sudo podman exec -it elasticsearch bin/elasticsearch-reset-password -u kibana_system
 
 - sudo podman-compose up -d kibana logstash
 - kibana 서비스 접속 ( https://localhost:5601/ )
